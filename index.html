@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" media="(max-width:600px)">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+</style>
+
+<body>
+    <div style="background-color: rgb(247,246,244)">
+        <nav class="nav row p-3 mx-3 ps-5" style="background-color: rgb(247,246,244);font-size:11.8px;">
+            <a id="nav-1" class=" nav-link col-2 p-2 text-center ms-4 active fw-semibold"
+                style="color: rgb(80, 102, 131); width: 120px;" aria-current="page" href="#">Corporate pricing</a>
+            <a id="nav-1" class="nav-link col-1 p-2 text-center  ms-4 fw-semibold" href="#"
+                style="color: rgb(80, 102, 131);">Discover Stores</a>
+            <a id="nav-1" class="nav-link col-1 p-2 text-center  ms-4 fw-semibold" href="#"
+                style="color: rgb(80, 102, 131);">Track Orders</a>
+            <!-- <a class="nav-link disabled">Disabled</a> -->
+            <div class="col-5 ms-2 text-end pt-2 fw-semibold"
+                style="font-family: sans-serif; font-size: 12.9px; color: rgb(80, 102, 131);">
+                <span id="nav-1">Need help? Call:</span><a href="" class="text-decoration-none" id="num-link"
+                    style="font-family:sans-serif; font-size: 13px;">+2348099561000</a>
+            </div>
+            <div id="whatsapp" class="col-1  ms-2 text-center">
+                <img src="images/download.svg" alt="">
+            </div>
+            <div id="Niger" class="col-2 border text-center pt-2 ms-4 rounded-5" style="width: 100px;">
+                <img class="pb-1" src="images/Nigerian flag.svg" alt="">
+                <span style="font-family:sans-serif;font-size: 13px;">Nigeria</span>
+            </div>
+        </nav>
+    </div>
+    <div id="sticky-nav" class="position-sticky" style="top: 0px;z-index:1;background-color: rgb(236,232,217);">
+        <nav class="nav row p-3 mx-3 ps-5" style="background-color: rgb(236,232,217);font-size:14px;">
+            <a id="printivo" class="nav-link col-4 p-2 ms-4 active fw-semibold" style="color: rgb(80, 102, 131);"
+                aria-current="page" href="#"><img src="images/Printivo logo.svg" alt=""></a>
+            <a id="nav-2" class="nav-link col-1 p-2 text-center ms-2 mt-1 fw-semibold" href="#"
+                style="color: rgb(80, 102, 131);width: fit-content;height: fit-content;">Home</a>
+            <a id="nav-2" class="nav-link col-1 p-2 text-center ms-2 mt-1 fw-semibold" href="#"
+                style="color: rgb(80, 102, 131);height: fit-content; width: fit-content;">All Products</a>
+            <!-- <a class="nav-link disabled">Disabled</a> -->
+            <a id="nav-2" class="nav-link col-1 p-2 text-center ms-2 mt-1 fw-semibold" href="#"
+                style="color: rgb(80, 102, 131);height: fit-content; width: fit-content;">Become a Reseller</a>
+            <a id="nav-2" class="nav-link col-1 p-2 text-center ms-2 mt-1 fw-semibold" href="#"
+                style="color: rgb(80, 102, 131);height: fit-content; width: fit-content;">Cost Calculator</a>
+            <a id="sign-in" class="nav-link col-1 p-2 text-end ms-5 mt-1 fw-semibold" href="#"
+                style="color: rgb(225,177,171);height: fit-content; width: fit-content;">Sign In</a>
+            <a id="nav-2" class="nav-link col-1 p-2 text-end ms-4 mt-1 fw-semibold" href="#"
+                style="color: rgb(225,177,171);height: fit-content; width: fit-content;">Create an Account</a>
+            <a id="cart" class="nav-link col-2 p-2 text-start ms-3 fw-semibold" href="#"
+                style="color: rgb(225,177,171);height: fit-content; width: 50px ;"><img src="images/cart.svg"
+                    alt=""></a>
+            <div id="inpo">
+                <form class="d-flex" role="search">
+                    <div class="dropdown">
+                        <button class="btn btn-outline-success dropdown-toggle" type="button" id="dropdownMenuButton2"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                            <li><a class="dropdown-item active" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Seperated Link</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-12 col-sm-12 col-md-6 me-2">
+                        <div>
+                            <input class="form-control w-100" type="search" placeholder="Search" aria-label="Search">
+                        </div>
+                    </div>
+                </form>
+                <!-- <div class="dropdown" id="sticky-search">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown button
+                </button> -->
+                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                    <li><a class="dropdown-item active" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+            </div>
+
+            <!-- <form class="col-lg-12 col-md-6 col-sm-3 d-flex" id="sticky-search" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+        </nav>
+    </div>
+
+
+    <div style="background-color: rgb(236,232,217);width: 100vw;">
+        <div id="quality-section" class="container">
+            <div class="row">
+                <div class="col-7 fw-light" style="font-family: dm serif display,serif;font-size: 68px;color:
+                rgb(56, 74, 98);">
+                    <div id="quality">
+                        Quality Prints
+                    </div>
+                    <div id="shipped" class="fw-bold" style="font-family: sans-serif;font-size: 24px;color:
+                    rgb(112, 128, 149);">
+                        Shipped to your your doorstep
+                    </div>
+                    <div>
+                        <label id="label" class="fw-bold"
+                            style="font-family: sans-serif;font-size: 16px;color: rgb(56, 74, 98);" for="">What would
+                            you like to print today?
+                        </label>
+                        <div id="search-input" class="d-flex">
+                            <input id="input" type="text" placeholder="Search for Business cards, T-shirts, Mugs, etc"
+                                class="form-control p-1 col-12 rounded border-0">
+                            <img id="search-icon" src="images/search.svg" alt="" class="btn border-0">
+                        </div>
+                    </div>
+                </div>
+                <div id="hand" class="col-5 pt-5" style="transform: translatex(180px);width: 400px;">
+                    <img style="max-width: 100%;" src="images/Card3_n9kqin.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- <div class="row">
+            <div class="col-9 border mt-4 mb-4">
+                <h3 class="text-center ms-2" style="font-family: dm serif display;color: rgb(56,74,108);">
+                    Popular Products
+                </h3>
+            </div>
+            <div class="col-3 border mt-4 mb-4 pt-2 text-end">
+                <a style="color: rgb(215,127,129);"  class=" fw-semibold text-center text-decoration-none" href="">See All products</a>
+            </div>
+        </div> -->
+        <div class="col-12">
+            <div class="d-flex p-2">
+                <h3 class="text-start mt-2 ms-2" style="font-family: dm serif display;color: rgb(56,74,108);">
+                    Popular Products
+                </h3>
+                <a style="color: rgb(215,127,129);margin-top: 15px;" class="ms-auto fw-semibold text-decoration-none"
+                    href="">See All products</a>
+            </div>
+
+        </div>
+        <div class="row g-3" style="margin: auto;">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-1.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            Two-sided Business Cards
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦7,700 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->Two-sided Bu...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-2.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            A5 flyers (Single Sided)
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦15,400 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->A5 flyers (S...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-3.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            Round Stickers (3.5" Diameter)
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦9,900 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width:fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->Round Sticke...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-4.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            Simple Mugs
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦2,750<span style="color:rgb(112, 128, 149);font-size: 14px;"> per 1</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width:fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->Simple Mugs...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+        </div>
+        <div class="row g-3" style="margin: auto;">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-5.jpg" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            Postcards (A6)
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦11,220 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 50</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->postcards (A...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-6.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            Roll Up Banners (Big Base)
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦27,600<span style="color:rgb(112, 128, 149);font-size: 14px;">per 1</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->Roll Up Bann...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-7.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            A2 Posters
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦36,000 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- --> A2 Posters...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-8.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            Trifold Brochures
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦19,000 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->Trifold Broc...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="row g-3" style="margin: auto;">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-9.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            Landscape ID Cards
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦1,400 <span style="color:rgb(112, 128, 149);font-size: 14px;"> per 1</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->Landscape ID...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-10.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            Off White T-shirts
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦3,499<span style="color:rgb(112, 128, 149);font-size: 14px;"> per 1</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->Off White T- ...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-11.png" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            A4 Branded Paper Bags
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦53,000 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width:fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- --> A4 Branded P...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div id="card-img">
+                        <img src="images/card-12.jpeg" class="card-img-top" alt=""
+                            style="height: 14rem;object-fit: cover;">
+                    </div>
+                    <div>
+                        <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                            A4 Courier Bags
+                        </h5>
+                        <p class=" fw-semibold card-subtitle p-2"
+                            style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                            STARTING AT
+                        </p>
+                        <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                            ₦16,000 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 100</span>
+                        </p>
+                    </div>
+                    <a class="btn text-start text-light fw-semibold p-2 m-2"
+                        style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                        href="/product/two-sided-business-cards"><span>Browse
+                            <!-- -->A4 Courier B...
+                            <img src="images/svgexport-2.png" alt="">
+                        </span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-2">
+        <div class="col-12">
+            <div class=" d-flex p-2">
+                <h3 class="text-start mt-2 ms-2" style="font-family: dm serif display;color: rgb(56,74,108);">
+                    Popular Categories
+                </h3>
+                <a style="color: rgb(215,127,129);margin-top: 15px;" class="ms-auto fw-semibold text-decoration-none"
+                    href="">See All Categories</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="row container mt-3" style="margin: auto;">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card col-3" style="width: 100%;">
+                <div id="card-img">
+                    <img src="images/card-13.png" class="card-img-top" alt="" style="height: 14rem;object-fit: cover;">
+                </div>
+                <div>
+                    <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                        Greeting Cards
+                    </h5>
+                    <p class=" fw-semibold card-subtitle p-2"
+                        style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                        STARTING AT
+                    </p>
+                    <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                        ₦15,000 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 50</span>
+                    </p>
+                </div>
+                <a class="btn text-start text-light fw-semibold p-2 m-2"
+                    style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                    href="/product/two-sided-business-cards"><span>Browse
+                        <!-- -->Greeting Car...
+                        <img src="images/svgexport-2.png" alt="">
+                    </span></a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="card col-3" style="width: 100%;">
+                <div id="card-img">
+                    <img src="images/card-14.png" class="card-img-top" alt="" style="height: 14rem;object-fit: cover;">
+                </div>
+                <div>
+                    <h5 class="card-title p-2 fw-bold" style="font-size: 16px;color:
+                        rgb(56, 74, 98);">
+                        Stickers
+                    </h5>
+                    <p class=" fw-semibold card-subtitle p-2"
+                        style="color:rgb(112, 128, 149);font-family: sans-serif;font-size: 13px;">
+                        STARTING AT
+                    </p>
+                    <p class=" h3 fw-semibold card-subtext p-2 fs-4" style="color:
+                        rgb(56, 74, 98);">
+                        ₦4,949 <span style="color:rgb(112, 128, 149);font-size: 14px;">per 75</span>
+                    </p>
+                </div>
+                <a class="btn text-start text-light fw-semibold p-2 m-2"
+                    style="background-color: rgb(215,127,129);width: fit-content;cursor: pointer;"
+                    href="/product/two-sided-business-cards"><span>Browse
+                        <!-- -->Stickers
+                        <img src="images/svgexport-2.png" alt="">
+                    </span></a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="fs-3" style="font-family:  dm serif display;color: rgb(56, 74, 98);margin-top: 100px;width: 100vw;">
+            Nigeria’s No. 1 online print shop
+            <span role="img" aria-label="crown">👑</span>
+        </div>
+        <div class=" fw-semibold fs-5" style="font-family:  sans-serif;color: rgb(112, 128, 149);width: 100vw;">
+            Our print services and solutions are trusted by these brands and <br> over 15,000 other businesses in
+            Nigeria.
+        </div>
+        <div class="mt-4 pb-4 row">
+            <img class="col-12" id="sponsours" src="images/sponsours.png" alt="">
+        </div>
+    </div>
+    <div class=" mt-3 pt-5 pb-4" style="background-color: rgb(237,246,253);width: 100vw;">
+        <div class=" container fs-3 mb-4"
+            style="font-family:  dm serif display;color: rgb(56, 74, 98);margin-top: 40px;">
+            What Customers Say About Us
+            <span role="img" aria-label="crown">🙌🏾</span>
+        </div>
+        <div class="container row pb-4" style="margin: auto;">
+            <div class=" col-lg-4 col-sm-12 pb-2">
+                <div class="card">
+                    <div class=" row p-4">
+                        <div class="col-2 ps-2 pe-3"><img src="images/twitter-col.svg" class="border rounded-5"
+                                style="width:30px; padding: 6px;" alt=""></div>
+                        <div class=" col-10 fw-semibold">Amina Ebele <a href="" class="text-decoration-none fw-normal "
+                                style="font-family:sans-serif;">@DeliciousAmina</a>
+                            <div class="pt-3 fw-normal" style="font-family: sans-serif;font-size: 16px;color:
+                            rgb(56, 74, 98);">
+                                I am now the unofficial
+                                <!-- --> <a href="https://twitter.com/Printivo" target="_blank"
+                                    class="text-decoration-none">@Printivo</a> <!-- -->ambassador. What these guys just
+                                pulled to ensure I got my menu cards today is stunning!
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-sm-12 pb-2">
+                <div class="card">
+                    <div class=" row p-4">
+                        <div class="col-2 ps-2 pe-3"><img src="images/twitter-col.svg" class="border rounded-5"
+                                style="width:30px; padding: 6px;" alt=""></div>
+                        <div class=" col-10 fw-semibold">Oluwatosin <a href="" class="text-decoration-none fw-normal "
+                                style="font-family:sans-serif;">@tosingirlfx</a>
+                            <div class="pt-3 fw-normal" style="font-family: sans-serif;font-size: 16px;color:
+                            rgb(56, 74, 98);">
+                                <a href="https://twitter.com/Printivo" target="_blank"
+                                    class="pages___StyledA4-sc-1u1ksla-8 dWnkQU">@Printivo</a> <!-- -->delivered my mugs
+                                in 24hrs. Thank you so much! It's nice doing business with you. More to come.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="  col-lg-4 col-sm-12 pb-2">
+                <div class="card">
+                    <div class=" row p-4">
+                        <div class="col-2 ps-2 pe-3"><img src="images/twitter-col.svg" class="border rounded-5"
+                                style="width:30px; padding: 6px;" alt=""></div>
+                        <div class=" col-10 fw-semibold">Amina Ebele <a href="" class="text-decoration-none fw-normal "
+                                style="font-family:sans-serif;">@DeliciousAmina</a>
+                            <div class="pt-3 fw-normal" style="font-family: sans-serif;font-size: 16px;color:
+                            rgb(56, 74, 98);">
+                                I am now the unofficial
+                                <!-- --> <a href="https://twitter.com/Printivo" target="_blank"
+                                    class="text-decoration-none">@Printivo</a> <!-- -->ambassador. What these guys just
+                                pulled to ensure I got my menu cards today is stunning!
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 pb-5" style="background-color: rgb(253,253,253);width: 100vw;">
+        <div class=" container fs-3 mb-4"
+            style="font-family:  dm serif display;color: rgb(56, 74, 98);margin-top: 40px;">
+            You can count on us for:
+        </div>
+        <div class="container row" style="margin: 50px auto;">
+            <div class=" col-lg-4 col-sm-12">
+                <div class=" p-2">
+                    <div class="row">
+                        <div class="col-3 "><img src="images/clock.svg" class="" alt=""></div>
+                        <div class="col-9 ps-2 fw-semibold" style="color: #384a62;">Fast Turnaround Within Days
+                            <div class="fw-normal mt-2" style="font-family: sans-serif;font-size: 16px;color: #677f9e;">
+                                Your order gets to you within 3-7 working days via DHL or our very own Printivo Direct.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-sm-12">
+                <div class=" p-2">
+                    <div class="row">
+                        <div class="col-3"><img src="images/shield.svg" class="" alt=""></div>
+                        <div class="col-9 ps-2 fw-semibold" style="color: #384a62;">100% Top Quality
+                            <div class="fw-normal mt-2" style="font-family: sans-serif;font-size: 16px;color: #677f9e;">
+                                Only the finest materials, machines and people will be involved in fulfilling your
+                                order.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-4 col-sm-12">
+                <div class=" p-2">
+                    <div class="row">
+                        <div class="col-3"><img src="images/wallet.svg" class="" alt=""></div>
+                        <div class="col-9 ps-2 fw-semibold" style="color: #384a62;">Affordable Services
+                            <div class="fw-normal mt-2" style="font-family: sans-serif;font-size: 16px;color: #677f9e;">
+                                All products are adequately priced to ensure you get value for your money at all times.
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-5 pb-5" style="background-color: rgb(247,246,244);width: 100vw;">
+        <div class=" container fs-3 mb-4"
+            style="font-family:  dm serif display;color: rgb(56, 74, 98);margin-top: 60px;">
+            Our amazing work got noticed by:
+        </div>
+        <div id="section-tech" class=" container row justify-content-around pb-5"
+            style="margin-left: 90px;margin-bottom: 40px;">
+            <div class=" col-lg-2 col-md-6 col-sm-12">
+                <div class="" id="tech">
+                    <div>
+                        <img id="tech" src="images/Tech.svg" alt="">
+                        <p class="pt-2">
+                            <a id="read" href="" class="fw-semibold"
+                                style="color: rgb(56,74,98); cursor: pointer;font-size: 15px;">
+                                Read the article here
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-2 col-md-6 col-sm-12">
+                <div class="" id="tech">
+                    <div>
+                        <img id="" src="images/forbes.svg" alt="">
+                        <p class="pt-2">
+                            <a id="read" href="" class="fw-semibold"
+                                style="color: rgb(56,74,98); cursor: pointer;font-size: 15px;">
+                                Read the article here
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-2 col-md-6 col-sm-12">
+                <div class="" id="">
+                    <div>
+                        <img id="tech" src="images/Techpoint.png" alt="">
+                        <p class="pt-2">
+                            <a id="read" href="" class="fw-semibold"
+                                style="color: rgb(56,74,98); cursor: pointer;font-size: 15px;">
+                                Read the article here
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-lg-2 col-md-6 col-sm-12">
+                <div class="" id="">
+                    <div>
+                        <img id="tech" src="images/techcabal.svg" alt="">
+                        <p class="pt-2">
+                            <a id="read" href="" class="fw-semibold"
+                                style="color: rgb(56,74,98); cursor: pointer;font-size: 15px;">
+                                Read the article here
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-12">
+                <div class="" id="">
+                    <div>
+                        <img class="" id="" src="images/Cnn.svg" alt="">
+                        <p class="pt-2">
+                            <a id="read" href="" class="fw-semibold" style="color: rgb(56,74,98);font-size: 15px;">
+                                Read the article here
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12" style="background-color: rgb(236,232,217);width: 100vw;">
+        <div class="container">
+            <div class="col-lg-12">
+                <h4 class="col-lg-12 col-sm-12" style="color: rgb(56,74,98);padding-top:90px;">
+                    Subscribe to our newsletter now, and get super exclusive tips on brand building!
+                </h4>
+                <div class="row col-lg-12 pb-5">
+                    <div class=" col-lg-4 
+                    col-sm-12 mb-5">
+                        <input id="bus-name" type="text" placeholder="Firstname or Business Name"
+                            class="p-3 w-100 rounded form-control" style="font-size: 16px;font-family: sans-serif;">
+                    </div>
+                    <div class="col-lg-6 d-flex
+                    col-sm-12 mb-5">
+                        <input id="email" type="text" placeholder="Email address"
+                            class="p-3 w-100 form-control rounded border-5"
+                            style="font-size: 16px;font-family: sans-serif;">
+                        <button class=" text-light fw-semibold border-0"
+                            style="background-color: rgb(56,74,98);width:90px;height:45px; margin: 7px 0 0 -100px;">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="blue-footer" style="background-color: rgb(56,74,98); padding: 70px 100px 80px 100px;width: 100vw;">
+        <div class="container row">
+            <div id="print" class="col-lg-3 col-sm-12 text-light">
+                <h4 class=" pb-2 font-sf text-lg" style="margin-left: 30px;font-size: 20px;">
+                    Printivo
+                </h4>
+                <ul style="list-style: none;line-height: 2rem;">
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">About
+                            Us</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold"
+                            style="font-size: 15px;">Contact</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Track
+                            Order</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Printivo
+                            Promise</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Printivo
+                            Blog</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold"
+                            style="font-size: 15px;">Career</a></li>
+                </ul>
+            </div>
+            <div id="help" class="col-lg-3 col-sm-12 text-light">
+                <h4 class="pb-2" style="margin-left: 30px;font-size: 20px;">
+                    Help and Information
+                </h4>
+                <ul style="list-style: none;line-height: 2rem;">
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Paper
+                            Quality</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Privacy
+                            Policy</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Twerms
+                            and Conditions</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Font
+                            Licenses</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Shipping
+                            and Delivery</a></li>
+                </ul>
+            </div>
+            <div id="make" class="col-lg-3 col-sm-12 text-light">
+                <h4 class="pb-2 font-sf text-lg" style="margin-left: 30px;">
+                    Make Money
+                </h4>
+                <ul style="list-style: none;line-height: 2rem;">
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Refer a
+                            friend & earn N1,000</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Become a
+                            Reseller</a></li>
+                    <li><a href="" class="text-decoration-none text-light fw-semibold" style="font-size: 15px;">Sell
+                            your Designs</a></li>
+                </ul>
+            </div>
+            <div id="payment" class="col-lg-3 col-sm-12 text-light">
+                <div style="line-height: 5rem;">
+                    <div class="row">
+                        <h4 class="fs-5" style="margin-left: 30px;">
+                            Follow Us
+                        </h4>
+                        <div class="row" style="margin-left: 10px;">
+                            <div class="col-3">
+                                <a href="" class="mx-2" style="width: fit-content;">
+                                    <img src="Images/Facebook..png" alt="" class=" mb-4">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="" class="mx-2" style="width: 40px;height: 50px;">
+                                    <img src="Images/Twitter..png" alt="" class="mb-4">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="" class="mx-2" style="width: 40px;height: 50px;">
+                                    <img src="Images/LinkedIn..png" alt="" class="mb-4">
+                                </a>
+                            </div>
+                            <div class="col-3">
+                                <a href="" class="mx-2" style="width: 40px;height: 50px;">
+                                    <img src="Images/Instagram..png" alt="" class="mb-4"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class=" font-sf fs-5 text-lg pt-4" style="margin-left: 30px;">
+                            Accepted Payments
+                        </h4>
+                        <img src="images/payment.png" class="w-75 mb-4" style="margin-left: 30px;" alt="">
+                    </div>
+                    <div class="">
+                        <h4 class=" font-sf fs-5 text-lg" style="margin-left: 30px;">
+                            Delivery
+                        </h4>
+                        <img src="images/shipping.png" class="w-75 mb-4" style="margin-left: 30px;" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="last-footer" style="background-color:
+    rgb(203, 202, 200);">
+        <div class="row p-4">
+            <div class="col-lg-12 col-sm-12 text-center fw-semibold" style="font-size: 16px;font-family:sans-serif;color: rgb(56, 74, 98);background-color:
+            rgb(203, 202, 200);">
+                Copyright © 2021 Printivo. All rights reserved.
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
