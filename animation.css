@@ -1,23 +1,111 @@
-body{
+body {
     overflow-x: hidden !important;
 }
-#card-img{
+
+#card-img {
     transform: scale(1);
     transition: 0.3s ease-in-out;
 }
-#card-img:hover img{
-transform:scale(1.02);
-transition-duration: 0.2s;
-transition-timing-function: ease;
-transition-delay: 0s;
+
+#card-img:hover img {
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
 }
-#input{
+
+#input {
     font-size: 16px;
     font-family: sans-serif;
 }
-#search-icon{
+
+#search-icon {
     transform: translateX(-50px);
 }
-#inpo{
+
+#inpo {
     display: none;
+}
+
+#quality {
+    font-family: dm serif display, serif;
+    font-size: 68px;
+    color: rgb(56, 74, 98);
+    padding-bottom: 15px;
+    text-align: start;
+    width: 80vw;
+}
+
+#shipped {
+    word-spacing: 2px;
+    width: 80vw !important;
+    /* border: thin solid; */
+    padding-bottom: 20px !important;
+}
+
+.mag {
+    /* border: thin solid; */
+    max-width: 600px !important;
+    width: fit-content !important;
+    padding-bottom: 20px !important;
+}
+
+#label {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: fit-content;
+    /* border: thick solid !important; */
+    padding-bottom: 20px !important;
+}
+
+#label label {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(56, 74, 98);
+    /* border: thin solid; */
+    width: 80vw !important;
+    padding: 5px;
+}
+
+#search-input {
+    position: relative;
+    /* border: thin solid red; */
+    max-width: 100% !important;
+    width: 100%;
+    background-color: #fff;
+    /* display: flex; */
+    padding: 10px;
+}
+
+#input {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 90% !important;
+    font-size: 20px !important;
+    /* border: thin solid; */
+    border-color: none !important; 
+}
+
+#input::placeholder {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    font-size: 16px !important;
+    /* border: thin solid; */
+    outline: none;
+}
+
+#search-input button {
+    position: absolute;
+    top: 20%;
+    right: 70px;
+    width: fit-content;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#hand {
+    transform: translatex(180px);width: 400px;
+    padding-bottom: 20px;
 }

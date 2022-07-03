@@ -1,154 +1,244 @@
-
-@media only screen and (max-width:600px){
-    body{
+@media only screen and (max-width:600px) {
+    body {
         padding: 0 !important;
         margin: 0 !important;
         overflow-x: hidden !important;
+        width: 100% !important;
     }
-    #nav-1{
+
+    #nav-1 {
         display: none !important;
         position: relative;
     }
-    #whatsapp{
+
+    #whatsapp {
         position: relative;
         right: 45px;
     }
-    #num-link{
+
+    #num-link {
         position: absolute;
         left: 10px;
-        
-        
-    }
-    #Niger{
-        position: absolute;
-        margin: none !important;
-        right: 20px ;
+
+
     }
 
-    #nav-2{
+    #Niger {
+        position: absolute;
+        margin: none !important;
+        right: 20px;
+    }
+
+    #nav-2 {
         display: none;
         /* position: sticky; */
         /* border: thin solid red; */
         padding: 20px !important;
     }
 
-    #sticky-nav{
+    #sticky-nav {
         position: sticky;
         /* background-color: wheat !important; */
         /* border: thin solid red; */
         padding: 20px !important;
     }
-    #printivo{
+
+    #printivo {
         width: fit-content;
-        transform: translateX(-80px);
+        position: relative;
+        right: 100px;
+        /* transform: translateX(-80px); */
     }
-    #sign-in{
+
+    #sign-in {
         position: absolute;
         right: 0;
     }
-    #cart{
+
+    #cart {
         position: absolute;
         right: 60px;
     }
-    #hand{
-        display: none;
+
+    #hand {
+        display: none !important;
     }
-    #quality-section{
+
+    #all-quality {
+        width: 100% !important;
+    }
+
+    #quality-section {
         padding-left: 20px;
     }
-    #quality{
-        padding-bottom:15px;
+
+    #quality {
+        font-family: dm serif display, serif;
+        font-size: 50px !important;
+        color: rgb(56, 74, 98);
+        padding-bottom: 15px !important;
         text-align: start;
-        font-size: 50px;
-        width: 80vw;
+        width: 80vw !important;
     }
-    #shipped{
+
+    #shipped {
         word-spacing: 2px;
+        width: 80vw !important;
+        /* border: thin solid; */
+        padding-bottom: 10px !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
-    #label{
-        width: 80vw;
+
+    .mag {
+        /* border: thin solid; */
+        max-width: 600px !important;
+        width: fit-content !important;
+        padding-bottom: 20px !important;
     }
-    #inpo{
+
+    #label {
+        padding: 0 !important;
+        margin: 0 !important;
+        width: fit-content;
+        /* border: thick solid !important; */
+        padding-bottom: 20px !important;
+    }
+
+    #label label {
+        font-family: sans-serif;
+        font-size: 16px;
+        color: rgb(56, 74, 98);
+        /* border: thin solid; */
+        width: 80vw !important;
+        padding: 5px;
+    }
+
+    #inpo {
         display: contents !important;
     }
-    #input{
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 100% !important;
-        font-size: 20px !important;
-        /* border: thin solid; */
+    #search-input{
+        position: relative;
+        /* border: thin solid red; */
+        max-width: 100% !important;
+        width: 100%;
+        background-color: #fff;
+        /* display: flex; */
+        padding: 10px;
     }
-    #input::placeholder{
+
+    #input {
         margin: 0 !important;
         padding: 0 !important;
-        width: 350px !important;
+        width: 90% !important;
+        font-size: 20px !important; 
+        border-color: none !important; 
+    }
+
+    #input::placeholder {
+        margin: 0 !important;
+        padding: 0 !important;
+        width:100% !important;
         font-size: 16px !important;
         /* border: thin solid; */
         outline: none;
     }
-    #search-icon{
-        border: thin solid red !important;
-        position: relative;
-        left: 50px;
-        width: 50px;
+    #search-input button{
+        position: absolute;
+        top: 26% !important;
+        right: 45px !important;
+        width: fit-content;
+        border: none;
+        outline: none;
+        background: none;
     }
-    #search-input{
+
+    /* #search-input button{
+        position: absolute !important;
+        left: 50px;
+        width: fit-content;
+    } */
+
+    /* #search-icon {
+        border: thin solid red !important;
+        position:absolute;
+        left: 50px;
+        /* width: 50px; 
+    }*/
+
+
+
+
+    /* #search-input {
         margin: 0 !important;
         position: relative !important;
         left: -10px !important;
         height: 60px;
         border: thin solid;
-    }
-    #section-tech{
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    #tech{
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 50vw !important;
-    }
-    #read{
-        font-size: 20px !important;
-    }
-    #blue-footer{
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-    #print{
-        padding: 40px 0 20px 20px;
-    }
-    #help{
-        padding: 20px;
-    }
-    #make{
-        padding: 20px;
-    }
-    #payment{
-        padding: 20px;
-    }
-    #dropdownMenuButton2{
-        background: #F7279E;
-        color: antiquewhite;
-    }
-    #bus-name{
-        font-size: 20px !important;
-    }
-    #bus-name::placeholder{
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 350px !important;
-        font-size: 16px !important;
-        /* border: thin solid; */
-    }
-    #email{
-        font-size: 20px !important;
-    }
-    #email::placeholder{
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 350px !important;
-        font-size: 16px !important;
-        /* border: thin solid; */
-    }
+    } */
+
+#section-tech {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#tech {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 50vw !important;
+}
+
+#read {
+    font-size: 20px !important;
+}
+
+#blue-footer {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#print {
+    padding: 40px 0 20px 20px;
+}
+
+#help {
+    padding: 20px;
+}
+
+#make {
+    padding: 20px;
+}
+
+#payment {
+    padding: 20px;
+}
+
+#dropdownMenuButton2 {
+    background: #F7279E;
+    color: antiquewhite;
+}
+
+#bus-name {
+    font-size: 20px !important;
+}
+
+#bus-name::placeholder {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 350px !important;
+    font-size: 16px !important;
+    /* border: thin solid; */
+}
+
+#email {
+    font-size: 20px !important;
+}
+
+#email::placeholder {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 350px !important;
+    font-size: 16px !important;
+    /* border: thin solid; */
+}
 }
